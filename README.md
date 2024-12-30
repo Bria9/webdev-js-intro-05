@@ -42,7 +42,7 @@ To view the project locally, you can either open the project files in your code 
 - [ ] In `assignment.js`:
     - [x] Create a mutable variable named `shiftValue` and do not assign it a value
     - [x] Create a mutable variable named `popValue` and do not assign it a value.
-    - [ ] Write the code for each step.
+    - [x] Write the code for each step.
 
 
 ### Tips

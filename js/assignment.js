@@ -25,39 +25,39 @@ const answerSixEl = document.getElementById("answer-six");
 const submissionBtn = document.getElementById("submission-btn");
 
 function updateAnswerOne() {
-    
+    answerOneEl.innerText = todos;
 }
 
 function updateAnswerTwo() {
-
+   answerTwoEl.innerText = todos[2];
 }
 
 function removeLastValue() {
-
+    popValue = todos.pop();    
 }
 
 function removeFirstValue() {
-
+   shiftValue = todos.shift();
 }
 
 function addShiftAndPopValues() {
-
+ todos.push(shiftValue, popValue);
 }
 
 function updateAnswerFour() {
-
+    answerFourEl.innerText = todos;
 }
 
 function reverseTodoList() {
-
+  todos.reverse();
 }
 
 function updateAnswerFive() {
-
+answerFiveEl.innerText = todos;
 }
 
 function updateAnswerSix() {
-
+answerSixEl.innerText = todos;
 }
 
 function render() {
@@ -66,5 +66,16 @@ function render() {
 
 submissionBtn.addEventListener("click", function () {
     // Update this function
+    updateAnswerOne();
+    updateAnswerTwo();
+    removeLastValue();
+    updateAnswerFour();
+    reverseTodoList();
+    updateAnswerFive();
+    removeFirstValue(); 
+    addShiftAndPopValues();
+    updateAnswerSix();
+
+
     render();
 });
